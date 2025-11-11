@@ -207,7 +207,7 @@ mining-laws-rag/
 
 - **Documentation**: See [README.md](README.md)
 - **Issues**: Open an issue on GitHub
-- **Email**: [your.email@example.com]
+- **Email**: [rawatamanamanaman1234@gmail.com]
 
 ## What's Next?
 
@@ -220,4 +220,4 @@ Check out these guides:
 
 **Need help?** Open an issue or contact the maintainer!
 
-**Happy coding!** ⛏️🚀
+**Happy coding!** 
