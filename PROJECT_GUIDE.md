@@ -307,40 +307,38 @@ Average Response Time: 3.15s
 
 ## 📊 Project Timeline
 
-| Day | Task | Time | Output |
+| Task | Time | Output |
 |-----|------|------|--------|
-| **Day 1** | Setup + Data Collection | 2 hours | PDFs in data/raw/ |
-| **Day 2** | Step 1: Process Documents | 3 hours | Embeddings created |
-| **Day 3** | Step 2: RAG Integration | 4 hours | Q&A working |
-| **Day 4** | Step 3: UI Development | 3 hours | Web interface live |
-| **Day 5** | Step 4: Evaluation | 2 hours | Metrics & reports |
-| **Day 6-7** | Documentation + Testing | 4 hours | Final presentation |
+| Setup + Data Collection | 2 hours | PDFs in data/raw/ |
+|  Step 1: Process Documents | 3 hours | Embeddings created |
+| Step 2: RAG Integration | 4 hours | Q&A working |
+| Step 3: UI Development | 3 hours | Web interface live |
+| Step 4: Evaluation | 2 hours | Metrics & reports |
+| Documentation + Testing | 4 hours | Final presentation |
 
-**Total**: 1 week for complete project
 
 ---
 
-## 🎓 For Your Project Presentation
 
 ### What to Demonstrate
 
-1. **Live Demo** (5 minutes)
+1. **Live Demo** 
    - Show the Gradio interface
    - Ask 3-4 questions
    - Highlight source citations
    - Show response speed
 
-2. **Technical Architecture** (3 minutes)
+2. **Technical Architecture** 
    - Explain RAG pipeline
    - Show embedding visualization
    - Discuss vector similarity
 
-3. **Evaluation Results** (3 minutes)
+3. **Evaluation Results** 
    - Present accuracy metrics
    - Show response time graphs
    - Discuss strengths and limitations
 
-4. **Code Walkthrough** (3 minutes)
+4. **Code Walkthrough** 
    - Highlight key functions
    - Explain document processing
    - Show LLM integration
@@ -477,8 +475,5 @@ Having issues? Check:
 
 ---
 
-## 🎉 You're Ready!
-
-Follow this guide step-by-step, and you'll have a complete, working RAG system for your final year project!
 
 **Good luck!** ⛏️🚀
