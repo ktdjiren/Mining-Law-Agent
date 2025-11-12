@@ -1,31 +1,101 @@
-# Mining Laws RAG System - Dependencies
-# Python 3.8+
+Python 3.8+
 
-# Core ML Libraries
+# ============================================================================
+# CORE ML & AI LIBRARIES
+# ============================================================================
 torch>=2.0.0
 transformers>=4.30.0
 
-# LangChain & Vector Store
+# ============================================================================
+# LANGCHAIN & VECTOR STORE (Step 1 & 2)
+# ============================================================================
 langchain==0.1.0
 langchain-community>=0.0.20
 chromadb==0.4.22
 
-# Embeddings
+# ============================================================================
+# EMBEDDINGS (Step 1)
+# ============================================================================
 sentence-transformers==2.2.2
 
-# PDF Processing
+# ============================================================================
+# PDF PROCESSING (Step 1)
+# ============================================================================
 PyPDF2>=3.0.0
 PyMuPDF>=1.23.0
 
-# Utilities
+# ============================================================================
+# LLM PROVIDERS (Step 2) - Choose at least ONE
+# ============================================================================
+
+# Option A: HuggingFace (FREE)
+huggingface-hub>=0.20.0
+
+# Option B: Groq (FREE & FAST) - Uncomment if using
+ groq>=0.4.0
+ langchain-groq>=0.0.1
+
+# Option C: OpenAI (PAID) - Uncomment if using
+ openai>=1.0.0
+ langchain-openai>=0.0.1
+
+# ============================================================================
+# WEB INTERFACE (Step 3)
+# ============================================================================
+gradio>=4.0.0
+
+# Alternative: Streamlit (if you prefer)
+ streamlit>=1.28.0
+
+# ============================================================================
+# UTILITIES
+# ============================================================================
 tqdm>=4.65.0
 python-dotenv>=1.0.0
+tiktoken>=0.5.0
 
-# Optional: For LLM Integration
-# openai>=1.0.0
-# anthropic>=0.7.0
-# groq>=0.4.0
+# ============================================================================
+# OPTIONAL: ADVANCED FEATURES
+# ============================================================================
 
-# Optional: For UI
-# gradio>=4.0.0
-# streamlit>=1.28.0
+# For API deployment
+ fastapi>=0.100.0
+ uvicorn>=0.23.0
+
+# For better PDF extraction
+ pdfplumber>=0.9.0
+ pytesseract>=0.3.10  # For OCR on scanned PDFs
+
+# For evaluation metrics
+ scikit-learn>=1.3.0
+ nltk>=3.8.0
+
+# For visualization
+ matplotlib>=3.7.0
+ plotly>=5.14.0
+
+# ============================================================================
+# INSTALLATION INSTRUCTIONS
+# ============================================================================
+
+# 1. Basic Installation (Steps 1-4):
+    pip install -r requirements.txt
+
+# 2. With Groq (Recommended for speed):
+    Uncomment groq and langchain-groq above, then:
+#    pip install -r requirements.txt
+
+# 3. With OpenAI:
+#    Uncomment openai and langchain-openai above, then:
+   pip install -r requirements.txt
+
+# 4. Check installation:
+   python -c "import langchain, chromadb, gradio; print('✅ All core packages installed')"
+
+# ============================================================================
+# GPU SUPPORT
+# ============================================================================
+#
+# For GPU acceleration (NVIDIA CUDA):
+- torch with CUDA: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+- Check GPU: python -c "import torch; print(torch.cuda.is_available())"
